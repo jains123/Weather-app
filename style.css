@@ -88,3 +88,17 @@ input:hover {
 .description {
     text-transform: capitalize;
 }
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+
+}
